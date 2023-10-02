@@ -60,7 +60,7 @@ public class PruebaArreglos {
         */
         String nombreCompleto;
 
-        for(int i=0; i<5;i++){
+        for(int i=0; i<89;i++){
         
             Random rand1 =new Random();
             int n1=rand1.nextInt(7);
