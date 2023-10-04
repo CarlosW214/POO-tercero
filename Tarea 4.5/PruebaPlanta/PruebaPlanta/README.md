@@ -8,15 +8,15 @@ Crear indice de un arreglo e ir tomando valores del arreglo.
 
 ---- o ---- o -------
 1--Diseñe un diagrama de clase que tenga 5 atributos que sea cada uno de tipo de dato distinto. 
-Ademáa alguno de ellos debe ser de tipo enum. 
+Ademáa alguno de ellos debe ser de tipo enum. /
 
-2--Diseñe al menos dos métodos en los que tenga lista de parámetros diferente de 0 y valor de retorno distinto de void. Con la intención de que los parámetros se utilicen como datos para que con ellos se resuelva un problema, se obtenga un calculo y eso sea lo que regrese el método. (El método deberá tener un nombre descriptivo del problema que resuelve).
+2--Diseñe al menos dos métodos en los que tenga lista de parámetros diferente de 0 y valor de retorno distinto de void. Con la intención de que los parámetros se utilicen como datos para que con ellos se resuelva un problema, se obtenga un calculo y eso sea lo que regrese el método. (El método deberá tener un nombre descriptivo del problema que resuelve). 
 
--Decidir que datos se necesitan en función de lo que se está haciendo. 
+-Decidir que datos se necesitan en función de lo que se está haciendo. // 
 
 3-- Codifique el diagrama de clases en un proyecto llamándolo prueba_clase. Claramente según que clase se está haciendo con su correspondiente clase de diseño. 
 
-4-- Implemente todos los métodos accesorios (get, set, to string y contructores). Para el caso de los constructores codifique al menos 3. Máximo, Mínimo e intermedio.
+4-- Implemente todos los métodos accesorios (get, set, to string y contructores). Para el caso de los constructores codifique al menos 3. Máximo, Mínimo e intermedio. ///
 
 ----- o ------ o -----
 5-- Con startUML modifique el diagrama de clase para que indetifíque un atributo static, constant y un método static. 

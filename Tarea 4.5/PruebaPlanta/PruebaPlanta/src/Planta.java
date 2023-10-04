@@ -43,5 +43,45 @@ public class Planta {
     }
 
     
+    public float HumedadRelativa(int He, float Ha, boolean calidad){
+        
+        float Hre, pi;
+        pi=3.1415f;
+
+        if (calidad==true) {  
+            Hre=(Ha-He)/pi;
+            System.out.println("\nLa calidad de la tierra de "+getNombre()+" es buena : DD");
+        }else{
+            Hre=pi*Ha;
+            System.out.println("\nLa calidad de la tirra de "+getNombre()+" es mala.\nConsiderar cambiar de tierra.");
+        }
+        
+        System.out.println("La humedad relativa de "+getNombre()+" es: "+Hre);
+        
+        return Hre;
+
+    }
+
+    public String Habitad(float temperatura, float presion, int presionABS ){
+        
+        String[] lugares=new String[]{"Soleado, Sombra, Resolana"};
+        
+
+        temperatura=presion+presionABS;
+
+        System.out.println("El habitad ideal de "+getNombre()+" es: "+lugar);
+
+        return Habitad(0, 0, 0);
+    }
+
+    public float precio(String nombre, int size){
+        
+
+        return precio("", 0);
+    }
+
+    
+    int datos[]= new int[49];
+
 
 }
