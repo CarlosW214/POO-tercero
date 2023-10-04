@@ -1,4 +1,5 @@
 
 public enum Hoja {
-
+    VERDE,AMARILLA,MORADA,LARGA,CORTA,FLORES,FRUTOS;
+    
 }
