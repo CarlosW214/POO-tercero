@@ -4,8 +4,32 @@ public class Arreglos {
     
     
     private int edad;
+    //private final String CURP; //No se puede set en atributos constantes.
+    private final String CURP;
+    
+    public Arreglos(String cURP) { //Constructor 
+        this.CURP = cURP;
+        this.edad=edad;
+        this.nombre=nombre;
+
+        cURP="";
+
+    }
+
+    /*public Arreglos() {   //Constructor 
+       // CURP = "xd";      //Para algo con un atributo constante su contructor minimo es de uno.
+    }Tiene atributos constantes por lo que no hay constructor 0.*/ 
 
     private String  nombre;
+    private static String gentilicio;
+    
+
+    public static String getGentilicio() {
+        return gentilicio;
+    }
+    public static void setGentilicio(String gentilicio) {
+        Arreglos.gentilicio = gentilicio;
+    }
 
     public String getNombre() {
         return nombre;
@@ -25,6 +49,9 @@ public class Arreglos {
         System.out.println("Bienvenido a una clase mas de POO");
     }
 
+    //public String toString(){
+        
+    //}
     public static char dame_una_letra(boolean opccion){
       
         char letra;
@@ -45,7 +72,7 @@ public class Arreglos {
 
     }
     public void nume(){
-        
+
         Random index=new Random();
         int ind1=index.nextInt(25);
          ind1+=1;
