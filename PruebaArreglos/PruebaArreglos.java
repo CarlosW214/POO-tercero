@@ -93,5 +93,7 @@ public class PruebaArreglos {
         Arreglos.dame_una_letra(false);
         System.out.println("La letra false es: "+letra);
 
+        Fulano.nume();
+        
     }
 }

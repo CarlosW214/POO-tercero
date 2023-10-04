@@ -44,4 +44,13 @@ public class Arreglos {
        return letra=' ';
 
     }
+    public void nume(){
+        
+        Random index=new Random();
+        int ind1=index.nextInt(25);
+         ind1+=1;
+
+        System.out.println(ind1);
+
+    }
 }
