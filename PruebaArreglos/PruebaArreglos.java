@@ -6,6 +6,7 @@ public class PruebaArreglos {
         //int Edades[5]; Sintaxis para lenguaje C
         
         // Creando Numeros aleatorios. 
+        Arreglos Fulano = new Arreglos();    
 
         Random rand =new Random();
         int n=rand.nextInt(81);
@@ -79,6 +80,18 @@ public class PruebaArreglos {
         Nombres[0]="Juan";
         Nombres[4]="Karen Madrigal";
 
+        //Llamando al metodo darSaludo.
+
+        //Se llamo a un metodo no estatico.
+        Fulano.DarSaludo();
+
+        //Dame una letra.
+        //Variables que se utilizan como banderas son aquellas a las que se les asigna un significado ineherente. 
+        char letra= Arreglos.dame_una_letra(true); //true -- Mayuscula false --- Minuscula.
+        
+        System.out.println("La letra true es"+letra);
+        Arreglos.dame_una_letra(false);
+        System.out.println("La letra false es: "+letra);
 
     }
 }
