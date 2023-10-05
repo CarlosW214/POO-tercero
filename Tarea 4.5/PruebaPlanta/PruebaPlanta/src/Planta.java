@@ -64,14 +64,25 @@ public class Planta {
 
     public String Habitad(float temperatura, float presion, int presionABS ){
         
+        float temperaturaplanta;
         String[] lugares=new String[]{"Soleado, Sombra, Resolana"};
         
 
-        temperatura=presion+presionABS;
+        temperaturaplanta=(presion+presionABS)/temperatura; 
+        if (temperaturaplanta>27) {
+            
+            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[2]);    
+       
+        }else if(temperaturaplanta>25)&&(temperaturaplanta<27){
+            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[3]);
+       
+        }else{
+            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[1]);
+        }        
+        
+        return Habitad(34, 23, 2);
 
-        System.out.println("El habitad ideal de "+getNombre()+" es: "+lugar);
 
-        return Habitad(0, 0, 0);
     }
 
     public float precio(String nombre, int size){
