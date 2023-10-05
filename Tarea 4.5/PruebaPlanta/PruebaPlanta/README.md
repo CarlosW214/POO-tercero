@@ -14,9 +14,9 @@ Ademáa alguno de ellos debe ser de tipo enum. /
 
 -Decidir que datos se necesitan en función de lo que se está haciendo. // 
 
-3-- Codifique el diagrama de clases en un proyecto llamándolo prueba_clase. Claramente según que clase se está haciendo con su correspondiente clase de diseño. 
+3-- Codifique el diagrama de clases en un proyecto llamándolo prueba_clase. Claramente según que clase se está haciendo con su correspondiente clase de diseño. //
 
-4-- Implemente todos los métodos accesorios (get, set, to string y contructores). Para el caso de los constructores codifique al menos 3. Máximo, Mínimo e intermedio. ///
+4-- Implemente todos los métodos accesorios (get, set, to string y contructores)//. Para el caso de los constructores codifique al menos 3. Máximo, Mínimo e intermedio. 
 
 ----- o ------ o -----
 5-- Con startUML modifique el diagrama de clase para que indetifíque un atributo static, constant y un método static. 

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Planta {
     
     private String nombre;
@@ -44,8 +46,9 @@ public class Planta {
 
     
     public float HumedadRelativa(int He, float Ha, boolean calidad){
-        
+
         float Hre, pi;
+        getN_humedad();
         pi=3.1415f;
 
         if (calidad==true) {  
@@ -98,5 +101,31 @@ public class Planta {
     
     int datos[]= new int[49];
 
+    public void datos(){
+
+        int sizeM=50;
+        Random random=new Random();
+        
+        float[] humedad = new float[sizeM];
+
+        for(int j=0; j<sizeM; j++ ){
+            humedad[j]=random.nextFloat();
+            setN_humedad(j);
+            System.out.println(getN_humedad());
+        }
+
+        for(int i=0; i<datos.length; i++){
+
+            Random ran=new Random();
+            int n=ran.nextInt(49);
+            n+=1;
+
+
+
+        }
+        
+     
+
+    }
 
 }
