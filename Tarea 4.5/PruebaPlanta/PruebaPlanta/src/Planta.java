@@ -104,14 +104,17 @@ public class Planta {
     public void datos(){
 
         int sizeM=50;
+        float k;
         Random random=new Random();
         
         float[] humedad = new float[sizeM];
 
         for(int j=0; j<sizeM; j++ ){
             humedad[j]=random.nextFloat();
-            setN_humedad(j);
-            System.out.println(getN_humedad());
+        }
+
+        for (int j = 0; j < sizeM; j++) {
+            System.out.print(humedad[j] + " ");
         }
 
         for(int i=0; i<datos.length; i++){
@@ -120,6 +123,7 @@ public class Planta {
             int n=ran.nextInt(49);
             n+=1;
 
+            System.out.println("La humeddad de "+getNombre()+" es: "+humedad[n]);
 
 
         }
