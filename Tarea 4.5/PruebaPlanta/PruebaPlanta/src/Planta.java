@@ -56,7 +56,7 @@ public class Planta {
             System.out.println("\nLa calidad de la tirra de "+getNombre()+" es mala.\nConsiderar cambiar de tierra.");
         }
         
-        System.out.println("La humedad relativa de "+getNombre()+" es: "+Hre);
+        System.out.println("La humedad relativa de "+getNombre()+" es: "+Hre+"\n");
         
         return Hre;
 
@@ -65,22 +65,26 @@ public class Planta {
     public String Habitad(float temperatura, float presion, int presionABS ){
         
         float temperaturaplanta;
-        String[] lugares=new String[]{"Soleado, Sombra, Resolana"};
-        
+        String[] lugares=new String[]{"Soleado","Sombra", "Resolana"};
+        String l;
+        l="Habitad";
 
-        temperaturaplanta=(presion+presionABS)/temperatura; 
+        temperaturaplanta=(temperatura+presion)/presionABS; 
         if (temperaturaplanta>27) {
             
-            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[2]);    
+            System.out.println("\nEl habitad ideal de "+getNombre()+" es: "+lugares[0]);    
        
-        }else if(temperaturaplanta>25)&&(temperaturaplanta<27){
-            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[3]);
+        }else if(temperaturaplanta>25 && temperaturaplanta<27)
+        {
+            System.out.println("\nEl habitad ideal de "+getNombre()+" es: "+lugares[2]);
        
         }else{
-            System.out.println("El habitad ideal de "+getNombre()+" es: "+lugares[1]);
+
+            System.out.println("\nEl habitad ideal de "+getNombre()+" es: "+lugares[1]);
         }        
-        
-        return Habitad(34, 23, 2);
+
+        //System.err.println(temperaturaplanta);
+        return l; 
 
 
     }
