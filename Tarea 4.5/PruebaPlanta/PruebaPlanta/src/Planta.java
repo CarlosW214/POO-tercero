@@ -113,8 +113,8 @@ public class Planta {
             humedad[j]=random.nextFloat();
         }
 
-        for (int j = 0; j < sizeM; j++) {
-            System.out.print(humedad[j] + " ");
+        for (int j = 0; j < sizeM; j++) {           //Imprime la Matriz de datos.
+            System.out.print("\n"+humedad[j] + " ");
         }
 
         for(int i=0; i<datos.length; i++){
