@@ -86,9 +86,7 @@ public class Planta {
             System.out.println("\nEl habitad ideal de "+getNombre()+" es: "+lugares[1]);
         }        
 
-        //System.err.println(temperaturaplanta);
         return l; 
-
 
     }
 
@@ -109,27 +107,49 @@ public class Planta {
         
         float[] humedad = new float[sizeM];
 
+        Random ran=new Random();
+        int n=ran.nextInt(49);
+        n+=1;
+
         for(int j=0; j<sizeM; j++ ){
             humedad[j]=random.nextFloat();
         }
 
-        for (int j = 0; j < sizeM; j++) {           //Imprime la Matriz de datos.
+        /*for (int j = 0; j < sizeM; j++) {               //Imprime la Matriz de datos.
             System.out.print("\n"+humedad[j] + " ");
+        }*/
+
+        setN_humedad(humedad[n]);
+        System.out.println("\n\n\nLa humeddad de "+getNombre()+" es: "+getN_humedad());
+
+        char[] sol_sombraArray = new char[49];
+
+        char s = 's';
+        char l = 'l';
+
+        for(int f=0; f<sol_sombraArray.length; f++){
+            if(f % 2 == 0){
+                sol_sombraArray[f]=s;
+            }else{
+                sol_sombraArray[f]=l;
+            }
         }
 
-        for(int i=0; i<datos.length; i++){
+        setSol_sombra(sol_sombraArray[n]);
+        if(getSol_sombra()=='s'){
 
-            Random ran=new Random();
-            int n=ran.nextInt(49);
-            n+=1;
+            System.out.println("La planta de "+getNombre()+" es de sombra.");
 
-            System.out.println("La humeddad de "+getNombre()+" es: "+humedad[n]);
+        }else{
 
+            System.out.println("La planta de "+getNombre()+" es de Sol.");
 
         }
-        
-     
+
+        Hoja[] colorArray = new Hoja[49];
+
+
+
 
     }
-
 }

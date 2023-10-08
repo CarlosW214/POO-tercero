@@ -37,6 +37,8 @@ public class PruebaPlanta {
         Oregano.Habitad(25, 1, 1);
 
         Romero.datos();
+        Lavanda.datos();
+        Oregano.datos();
         
 
     }
