@@ -27,10 +27,12 @@ public class PruebaPlanta {
         Lavanda.setEdad(3);
         Romero.setEdad(4);
 
-
-
         Romero.HumedadRelativa(43, 10f, true);
         Lavanda.HumedadRelativa(31, 10, false);
+
+        Romero.precio(23);
+        Lavanda.precio(14);
+        Oregano.precio(5);
 
         Romero.Habitad(32, 1.3f, 1);
         Lavanda.Habitad(34.5f, 1.44f, 1);

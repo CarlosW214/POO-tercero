@@ -90,10 +90,16 @@ public class Planta {
 
     }
 
-    public float precio(String nombre, int size){
-        
+    public float precio(int size){
+       
+        float M1;
+        edad=getEdad();
+        System.out.println("\n\nEl precio de "+getNombre()+" segun sus caracteristicas que son: \nEdad: "+getEdad()+"\nTipo de hoja: "+getHoja1()+"\nHumedad: "+getN_humedad()+"\nEdad: "+getEdad());
+        M1=(getEdad()+getN_humedad()+20)*size;
 
-        return precio("", 0);
+        System.out.println("El precio de "+getNombre()+" es: "+M1);
+
+        return M1;
     }
 
     
@@ -102,7 +108,6 @@ public class Planta {
     public void datos(){
 
         int sizeM=50;
-        float k;
         Random random=new Random();
         
         float[] humedad = new float[sizeM];
@@ -145,9 +150,6 @@ public class Planta {
             System.out.println("La planta de "+getNombre()+" es de Sol.");
 
         }
-
-        Hoja[] colorArray = new Hoja[49];
-
 
 
 
