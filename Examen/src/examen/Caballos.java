@@ -53,13 +53,31 @@ public class Caballos {
         this.color = color;
     }
 
+//-------------------Constructor Maximo----------------
+    public Caballos(String nombre, int n_caballo, float cantidad_comida, char sexo, Color color){
+        this.nombre=nombre;
+        this.n_caballo=n_caballo;
+        this.cantidad_comida=cantidad_comida;
+        this.sexo=sexo;
+        this.color=color;
+
+    }
+//----------------Constructor Minimo-----------------
+    public Caballos(){
+
+    }
+
+
+    public void Datos(){
+        System.out.println("Los datos de"+getNombre()+ "son: \nNombre: "+getNombre()+"\nNumero de caballo: "+getN_caballo()+"\n Cantidad de comida que come: "+getCantidad_comida()+"\n Sexo: "+getSexo()+"\n Color: "+getColor());
+    }
 
     public float Calculo_talla(int tamano, float peso, int edad){
         float talla;
         
         talla=(tamano*peso)*edad/3;
 
-        System.out.println("La talla de"+getNombre()+" es:"+talla);
+        System.out.println("La talla de "+getNombre()+" es: "+talla);
         
         return talla;
 

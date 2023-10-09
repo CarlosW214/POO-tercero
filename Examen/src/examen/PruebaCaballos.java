@@ -16,14 +16,23 @@ public class PruebaCaballos {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        System.out.println("Lerdo Crisostomo Juan Carlos \nPrograma Caballos.");
+        System.out.println("Lerdo Crisostomo Juan Carlos. \nPrograma Caballos.");
 
-        Caballos Carrasco = new Caballos();
-        Caballos Jake = new Caballos();
-        Caballos Gunter = new Caballos();
+        Caballos Jake=new Caballos("Jake", 1, 12, 'M', null);
+        Caballos Gunter=new Caballos();
 
-        Carrasco.Calculo_talla(32, 60, 2);
-        
+
+        Caballos[] Caballo = new Caballos[79];
+
+
+        for (int i=0; i<79; i++ ) {
+            Caballo[i]=new Caballos();
+        }
+
+        for (int i=0; i<Caballo.length;i++){
+            Caballo[i].Datos();
+        }
+
 
         
     }
