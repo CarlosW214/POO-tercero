@@ -8,13 +8,24 @@ package examen;
  *
  * @author carlo
  */
-public class Examen {
+public class PruebaCaballos {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        System.out.println("Lerdo Crisostomo Juan Carlos \nPrograma Caballos.");
+
+        Caballos Carrasco = new Caballos();
+        Caballos Jake = new Caballos();
+        Caballos Gunter = new Caballos();
+
+        Carrasco.Calculo_talla(32, 60, 2);
+        
+
+        
     }
     
 }
