@@ -85,12 +85,27 @@ public class Caballos {
 
         Color[] colores_lista = new Color[80];
         Color blanco=Color.BLANCO;
+        Color negro=Color.NEGRO;
+        Color cafe=Color.CAFE;
+        Color gris=Color.GRIS;
+        Color moteado=Color.MOTEADO;
+        Color amarillo=Color.AMARILLO;
+
 
         for (int c=0; c<colores_lista.length; c++){
-            if(c%2 == 0){
-                if(c%3 == 0){
+            if(c<=10){
+                colores_lista[c]=blanco;
 
-                }
+            }else if(c>10 && c<=20){
+                colores_lista[c]=negro;
+            }else if(c>20 && c<=30){
+                colores_lista[c]=cafe;
+            }else if(c>30 && c<=40){
+                colores_lista[c]=gris;
+            }else if(c>40 && c<=50){
+                colores_lista[c]=moteado;
+            }else{
+                colores_lista[c]=amarillo;
             }
         }
 
@@ -103,19 +118,20 @@ public class Caballos {
             
         }
 
-        for(int i=0; i<80; i++){
+        for(int i=0; i<80; i++){ //
 
             float n_aliemento;
 
             n_aliemento=rand1.nextFloat()+n1;
-            alimentolista[i]=n_aliemento;
+            alimentolista[n]=n_aliemento;
 
             setNombre(nombresCaballos[n]);
             setN_caballo(n);    
             setCantidad_comida(n_aliemento);
             setSexo(sexolista[n]);
+            setColor(colores_lista[n]);
 
-        }
+        } //
 
         System.out.println("Los datos de "+getNombre()+ " son: \nNombre: "+getNombre()+"\nNumero de caballo: "+getN_caballo()+"\nCantidad de alimento que necesita: "+getCantidad_comida()+" kg"+"\nSexo: "+getSexo()+"\nColor: "+getColor()+"\n");
     }
