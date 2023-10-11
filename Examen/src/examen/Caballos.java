@@ -72,6 +72,7 @@ public class Caballos {
         
         String[] nombresCaballos = {"lol","Relámpago", "Tornado", "Espíritu", "Fuego", "Estrella", "Rayo", "Viento", "Pegaso", "Centella", "Bravo", "Canela", "Diamante", "Montaña", "Trueno", "Cascabel", "Corazón", "Valiente", "Jade", "Esmeralda", "Zafiro", "Aurora", "Dorado", "Plata", "Luna", "Sol", "Místico", "Titanio", "Invierno", "Verano", "Primavera", "Otoño", "Rocío", "Aguamarina", "Marino", "Flama", "Ciruela", "Cobalto", "Violeta", "Índigo", "Turquesa", "Caramelo", "Ambar", "Mariposa", "Apolo", "Astra", "Brisa", "Polar", "Cruzado", "Fenix", "Galaxia", "Granito", "Huracán", "Icaro", "Lince", "Místico", "Nebulosa", "Orion", "Polaris", "Quasar", "Sideral", "Titan", "Uranio", "Venus", "Zenith", "Ángel", "Dante", "Gala", "Sombra", "Noche", "Danza", "Dama", "Rey", "Reina", "Canción", "Deseo", "Dorado", "Sueño", "Esperanza", "Paciencia", "Libertad", "Victoria"};
        
+        
         Random rand=new Random();
         Random rand1=new Random();
         int n1=rand.nextInt(30);
@@ -80,8 +81,8 @@ public class Caballos {
 
         float[] alimentolista = new float[80];
         char[] sexolista = new char[80];
-        char female='f';
-        char male='m';
+        char female='F';
+        char male='M';
 
         Color[] colores_lista = new Color[80];
         Color blanco=Color.BLANCO;
@@ -90,6 +91,7 @@ public class Caballos {
         Color gris=Color.GRIS;
         Color moteado=Color.MOTEADO;
         Color amarillo=Color.AMARILLO;
+        
 
 
         for (int c=0; c<colores_lista.length; c++){
@@ -138,12 +140,16 @@ public class Caballos {
 
     public float Calculo_talla(int tamano, float peso, int edad){
         float talla;
-        
-        talla=(tamano*peso)*edad/3;
-
+        talla=(tamano*peso)*edad/6;
         System.out.println("La talla de "+getNombre()+" es: "+talla);
-        
         return talla;
+    }
 
+    public void Raza(){
+    System.out.println("\nLa raza de "+getNombre()+"es: "+especie_1+"\nPerteneciente al establo: "+id_caballo_establo);
+    }
+    
+    public void Raza2(){
+        System.out.println("\nLa raza de "+getNombre()+"es: "+especie_2+"\nPerteneciente al establo: "+id_caballo_establo);
     }
 }
