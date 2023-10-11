@@ -17,7 +17,7 @@ public class PruebaCaballos {
 
         System.out.println("Lerdo Crisostomo Juan Carlos. \nPrograma Caballos.");
 
-        Caballos Jake=new Caballos("Jake", 1, 12, 'M', null);
+        Caballos Jake=new Caballos("Jake", 1, 12, 'M', Color.BLANCO);
        // Caballos Gunter=new Caballos();
 
        
@@ -33,6 +33,7 @@ public class PruebaCaballos {
             Caballo[i].Datos();
         }
 
+        Jake.Calculo_talla(3, 12, 1);
         Caballo[79].Calculo_talla(45, 34, 1); 
         Caballo[45].Calculo_talla(23, 12, 2);
         Caballo[32].Calculo_talla(3, 5, 3);

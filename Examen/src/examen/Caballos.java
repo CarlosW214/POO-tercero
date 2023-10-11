@@ -146,10 +146,14 @@ public class Caballos {
     }
 
     public void Raza(){
-    System.out.println("\nLa raza de "+getNombre()+"es: "+especie_1+"\nPerteneciente al establo: "+id_caballo_establo);
+    System.out.println("\nLa raza de "+getNombre()+" es: "+especie_1+"\nPerteneciente al establo: "+id_caballo_establo);
     }
-    
+
     public void Raza2(){
-        System.out.println("\nLa raza de "+getNombre()+"es: "+especie_2+"\nPerteneciente al establo: "+id_caballo_establo);
+        System.out.println("\nLa raza de "+getNombre()+" es: "+especie_2+"\nPerteneciente al establo: "+id_caballo_establo);
+    }
+
+    public String toString() {
+        return "Nombre: " + nombre + ", Edad: " + edad;
     }
 }
