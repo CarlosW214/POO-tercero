@@ -66,24 +66,58 @@ public class Caballos {
     }
 //----------------Constructor Minimo-----------------
     public Caballos(){
-
     }
-
-
 
     public void Datos(){
         
-        String[] nombresCaballos = {"Relámpago", "Tornado", "Espíritu", "Fuego", "Estrella", "Rayo", "Viento", "Pegaso", "Centella", "Bravo", "Canela", "Diamante", "Montaña", "Trueno", "Cascabel", "Corazón", "Valiente", "Jade", "Esmeralda", "Zafiro", "Aurora", "Dorado", "Plata", "Luna", "Sol", "Místico", "Titanio", "Invierno", "Verano", "Primavera", "Otoño", "Rocío", "Aguamarina", "Marino", "Flama", "Ciruela", "Cobalto", "Violeta", "Índigo", "Turquesa", "Caramelo", "Ambar", "Mariposa", "Apolo", "Astra", "Brisa", "Polar", "Cruzado", "Fenix", "Galaxia", "Granito", "Huracán", "Icaro", "Lince", "Místico", "Nebulosa", "Orion", "Polaris", "Quasar", "Sideral", "Titan", "Uranio", "Venus", "Zenith", "Ángel", "Dante", "Gala", "Sombra", "Noche", "Danza", "Dama", "Rey", "Reina", "Canción", "Deseo", "Dorado", "Sueño", "Esperanza", "Paciencia", "Libertad", "Victoria"};
-        
+        String[] nombresCaballos = {"lol","Relámpago", "Tornado", "Espíritu", "Fuego", "Estrella", "Rayo", "Viento", "Pegaso", "Centella", "Bravo", "Canela", "Diamante", "Montaña", "Trueno", "Cascabel", "Corazón", "Valiente", "Jade", "Esmeralda", "Zafiro", "Aurora", "Dorado", "Plata", "Luna", "Sol", "Místico", "Titanio", "Invierno", "Verano", "Primavera", "Otoño", "Rocío", "Aguamarina", "Marino", "Flama", "Ciruela", "Cobalto", "Violeta", "Índigo", "Turquesa", "Caramelo", "Ambar", "Mariposa", "Apolo", "Astra", "Brisa", "Polar", "Cruzado", "Fenix", "Galaxia", "Granito", "Huracán", "Icaro", "Lince", "Místico", "Nebulosa", "Orion", "Polaris", "Quasar", "Sideral", "Titan", "Uranio", "Venus", "Zenith", "Ángel", "Dante", "Gala", "Sombra", "Noche", "Danza", "Dama", "Rey", "Reina", "Canción", "Deseo", "Dorado", "Sueño", "Esperanza", "Paciencia", "Libertad", "Victoria"};
+       
         Random rand=new Random();
+        Random rand1=new Random();
+        int n1=rand.nextInt(30);
         int n= rand.nextInt(79);
         n+=1;
 
-        for(int k=0; k<nombresCaballos.length;k++){
-            setN_caballo(n);    
+        float[] alimentolista = new float[80];
+        char[] sexolista = new char[80];
+        char female='f';
+        char male='m';
+
+        Color[] colores_lista = new Color[80];
+        Color blanco=Color.BLANCO;
+
+        for (int c=0; c<colores_lista.length; c++){
+            if(c%2 == 0){
+                if(c%3 == 0){
+
+                }
+            }
         }
 
-        System.out.println("Los datos de"+getNombre()+ "son: \nNombre: "+getNombre()+"\nNumero de caballo: "+getN_caballo()+"\n Cantidad de comida que come: "+getCantidad_comida()+"\n Sexo: "+getSexo()+"\n Color: "+getColor());
+        for (int s=0; s<sexolista.length; s++){
+            if (s%2 == 0) {
+                sexolista[s]=female;
+            }else{
+                sexolista[s]=male;
+            }
+            
+        }
+
+        for(int i=0; i<80; i++){
+
+            float n_aliemento;
+
+            n_aliemento=rand1.nextFloat()+n1;
+            alimentolista[i]=n_aliemento;
+
+            setNombre(nombresCaballos[n]);
+            setN_caballo(n);    
+            setCantidad_comida(n_aliemento);
+            setSexo(sexolista[n]);
+
+        }
+
+        System.out.println("Los datos de "+getNombre()+ " son: \nNombre: "+getNombre()+"\nNumero de caballo: "+getN_caballo()+"\nCantidad de alimento que necesita: "+getCantidad_comida()+" kg"+"\nSexo: "+getSexo()+"\nColor: "+getColor()+"\n");
     }
 
     public float Calculo_talla(int tamano, float peso, int edad){
