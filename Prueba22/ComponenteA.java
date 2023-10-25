@@ -36,6 +36,7 @@ public class ComponenteA {
 
     }
 
+    @Override
     public String toString() {
         return "ComponenteA{" +"enteroCA=" + enteroCA +", letraCA=" + letraCA +", TextoC='" + TextoC + '\'' + '}';
     }
@@ -49,4 +50,7 @@ public class ComponenteA {
             return texto;
 
     }
+    
+    
+    
 }

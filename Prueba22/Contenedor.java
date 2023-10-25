@@ -1,3 +1,4 @@
+
 public class Contenedor {
     
     private int enteroC;
@@ -6,7 +7,16 @@ public class Contenedor {
 
     //Codificando la agregacion. 
     private ComponenteA objCA; //Codifica la relacion. Agregar setters / getters. 
+    private Componente_B objCB;
 
+    public Componente_B getObjCB() {
+        return objCB;
+    }
+
+    public void setObjCB(Componente_B objCB) {
+        this.objCB = objCB;
+    }
+    
     public ComponenteA getObjCA() {
         return objCA;
     }
@@ -32,11 +42,13 @@ public class Contenedor {
         this.enteroC = enteroC;
     }
 
-    public Contenedor(int enteroC, char letraC, String textoC, ComponenteA objCA) {
+    public Contenedor(int enteroC, char letraC, String textoC, ComponenteA objCA, Componente_B objCB) {
         this.enteroC = enteroC;
         this.letraC = letraC;
         this.textoC = textoC;
         this.objCA=objCA;
+        this.objCB=objCB;
+        
     }
     
     public Contenedor() {
@@ -44,14 +56,15 @@ public class Contenedor {
         this.letraC=' ';
         this.textoC="";
         this.objCA=new ComponenteA();
+        this.objCB=new Componente_B();
 
     }
 
+    @Override
     public String toString() {
-        return "Contenedor{" +"enteroC=" + enteroC +", letraC=" + letraC +", textoC='" + textoC + '\'' +'}';
+        return "Contenedor{" + "enteroC=" + enteroC + ", letraC=" + letraC + ", textoC=" + textoC + ", objCA=" + objCA + ", objCB=" + objCB + '}';
     }
     
-
     public String metodo1C(int entero, String Texto){
 
         String texto="";
