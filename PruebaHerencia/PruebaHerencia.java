@@ -1,5 +1,6 @@
 public class PruebaHerencia {
     public static void main(String[] args) {
+
         System.out.println("lol");
 
         Padre objPadre= new Padre();
@@ -22,7 +23,6 @@ public class PruebaHerencia {
         objHija.metodo4CP("A", 23);
         
         System.out.println(objHija);
-
-        
+  
     }
 }
