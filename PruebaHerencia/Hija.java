@@ -1,4 +1,5 @@
 abstract public class Hija extends Padre{
+    
     public String textoCH;
     public int enteroCH;
     

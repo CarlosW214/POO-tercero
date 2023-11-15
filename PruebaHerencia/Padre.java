@@ -1,19 +1,32 @@
-public class Padre{
-    
-    private int EnteroCP;
+class Padre {
+    private int enteroCP;
     private char letraCP;
     private String textoCP;
-    private float RealCP;
+    private float realCP;
 
-      public int getEnteroCP() {
-        return EnteroCP;
+    public Padre(int enteroCP, char letraCP, String textoCP, float realCP) {
+        this.enteroCP = enteroCP;
+        this.letraCP = letraCP;
+        this.textoCP = textoCP;
+        this.realCP = realCP;
+    }
+    
+    public Padre(){
+        this.enteroCP = 0;
+        this.letraCP = 'a';
+        this.textoCP = " ";
+        this.realCP = 0.0f;
+    }
+
+    public int getEnteroCP() {
+        return enteroCP;
     }
 
     public void setEnteroCP(int enteroCP) {
-        EnteroCP = enteroCP;
+        this.enteroCP = enteroCP;
     }
 
-     public char getLetraCP() {
+    public char getLetraCP() {
         return letraCP;
     }
 
@@ -29,60 +42,42 @@ public class Padre{
         this.textoCP = textoCP;
     }
 
-     public float getRealCP() {
-        return RealCP;
+    public float getRealCP() {
+        return realCP;
     }
 
     public void setRealCP(float realCP) {
-        RealCP = realCP;
-    }
-
-    public Padre() {
-        EnteroCP=0;
-        letraCP=' ';
-        textoCP="";
-        RealCP=0;
-
-    }
-    
-    public Padre(int enteroCP, char letraCP, String textoCP, float realCP) {
-        EnteroCP = enteroCP;
-        this.letraCP = letraCP;
-        this.textoCP = textoCP;
-        RealCP = realCP;
+        this.realCP = realCP;
     }
 
     @Override
     public String toString() {
-    return String.format("EnteroCP: %d, letraCP: %c, textoCP: %s, RealCP: %f",
-        EnteroCP, letraCP, textoCP, RealCP);
+        return "PruebaPadre{" + "enteroCP=" + enteroCP + ", letraCP=" + letraCP + ", textoCP=" + textoCP + ", realCP=" + realCP + '}';
     }
-
-
+    
     public int metodo1CP(int entero){
-        int numero;
-        numero=1;
-        entero=entero+numero;
-        System.out.println("Ejecutando el metedo 1");
-        return entero;
-
+        int resultado=0;
+        System.out.println("Ejecutándose el metodo1CP() con: "+entero);
+        resultado=resultado+2*entero;
+        return resultado;
     }
-
-    public char metodo2CP(char letra){
-        letra=' ';
-        System.out.println("Ejecutando el metodo 2");
-        return letra;
+    public char metodo2CP(char letra, int cDL){
+        char caracter='a';
+        System.out.println("Ejecutándose el metodo2CP() con: "+letra+", "+cDL);
+        caracter=(char)(caracter+1);
+        return caracter;
     }
-
-    public float metodo3CP(float entero, char letra2){
-        System.out.println("Ejecutando el metodo 3");
-        return entero;
+    public String metodo3CP(String textoCP, int cDP){
+        String unTexto="Hola mundo";
+        System.out.println("Ejecutándose el metodo3CP() con: "+textoCP+", "+cDP);
+        unTexto=textoCP+cDP;
+        return unTexto;
     }
-
-    public float metodo4CP(String texto, int numero){
-        float n2;
-        n2=0;
-        System.out.println("Ejecutando el metodo 4");
-        return n2;
+    public float metodo4CP(float realCP){
+        float unReal=0.5f;
+        System.out.println("Ejecutándose el metodo4CP() con:"+realCP);
+        unReal=unReal*realCP;
+        return unReal;
     }
+    
 }
