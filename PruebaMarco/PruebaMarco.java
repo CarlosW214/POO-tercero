@@ -3,6 +3,8 @@ public class PruebaMarco {
         //Creando un marco principal.
 
         MarcoPrincipal MP1 = new MarcoPrincipal();
-        
+        //Haciendo visible al marco. 
+        MP1.setVisible(true);
+
     }
 }
